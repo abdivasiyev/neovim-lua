@@ -120,3 +120,7 @@ nnoremap("<leader>d", ":DBUIToggle<CR>")
 
 -- RestNvim
 nnoremap("<leader>rr", ":lua require('rest-nvim').run()<cr>")
+
+-- NeoClip
+nnoremap("<leader><S-v>", ":Telescope neoclip a extra=star,plus,b<CR>")
+

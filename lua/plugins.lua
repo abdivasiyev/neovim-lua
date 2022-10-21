@@ -141,6 +141,7 @@ return require('packer').startup(function(use)
 
   -- Themes
   use "sickill/vim-monokai"
+  use "tomasiser/vim-code-dark"
 
   use ({
     "f-person/git-blame.nvim",
@@ -157,6 +158,17 @@ return require('packer').startup(function(use)
     requires = { "nvim-lua/plenary.nvim" },
     config = function() require('plugins.rest-nvim') end
   }
+
+  use {
+    "AckslD/nvim-neoclip.lua",
+    requires = {
+      {'nvim-telescope/telescope.nvim'},
+    },
+    config = function()
+      require('neoclip').setup()
+    end,
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end
