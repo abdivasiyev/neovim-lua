@@ -117,3 +117,6 @@ nnoremap("tt", ":TagbarToggle<CR>")
 
 -- DBUI
 nnoremap("<leader>d", ":DBUIToggle<CR>")
+
+-- RestNvim
+nnoremap("<leader>rr", ":lua require('rest-nvim').run()<cr>")

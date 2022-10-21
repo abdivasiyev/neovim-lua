@@ -152,6 +152,11 @@ return require('packer').startup(function(use)
   use "kristijanhusak/vim-dadbod-ui"
   use "kristijanhusak/vim-dadbod-completion"
 
+  use {
+    "NTBBloodbath/rest.nvim",
+    requires = { "nvim-lua/plenary.nvim" },
+    config = function() require('plugins.rest-nvim') end
+  }
   if packer_bootstrap then
     require('packer').sync()
   end
