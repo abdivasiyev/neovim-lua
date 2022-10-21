@@ -6,6 +6,7 @@ vim.o.showmode           = false
 vim.o.showtabline        = 2                            -- Always show tabline
 vim.o.title              = true
 vim.o.termguicolors      = true                         -- Use true colors, required for some plugins
+vim.o.background         = "dark"
 vim.wo.number            = true
 vim.wo.relativenumber    = true
 vim.wo.signcolumn        = 'yes'
@@ -34,6 +35,7 @@ vim.o.spell              = false
 vim.o.spelllang          = "en_us"
 vim.o.completeopt        = "menuone,noinsert,noselect"
 vim.o.wildmode           = "longest,full"               -- Display auto-complete in Command Mode
+vim.o.wildmenu           = true
 vim.o.updatetime         = 300                          -- Delay until write to Swap and HoldCommand event
 vim.g.do_file_type_lua   = 1
 
@@ -55,3 +57,18 @@ vim.diagnostic.config {
   underline = false,
   signs = true,          -- Keep gutter signs
 }
+
+-- Clipboard
+vim.o.clipboard = 'unnamedplus'
+
+vim.o.syntax = "enable"
+vim.o.NERDTreeDirArrows = 1
+vim.o.NERDTreeMinimalUI=1
+vim.o.NERDTreeWinSize = 35
+
+-- Git blame
+vim.g.gitblame_enabled = 1
+
+-- DBUI
+vim.g.db_ui_save_location = "~/code/queries/"
+vim.g.db_ui_use_nerd_fonts = true

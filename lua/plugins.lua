@@ -85,12 +85,11 @@ return require('packer').startup(function(use)
     config = function() require('plugins.lualine') end,
   })
 
-  -- NvimTree
-  use({
-    'kyazdani42/nvim-tree.lua',
-    requires = 'kyazdani42/nvim-web-devicons',
-    config = function() require('plugins.nvimtree') end,  -- Must add this manually
-  })
+  -- devicons
+  use "ryanoasis/vim-devicons"
+
+  -- NerdTree
+  use "preservim/nerdtree"
 
   -- Startify
   use({
@@ -122,10 +121,6 @@ return require('packer').startup(function(use)
   use "EgZvor/vim-black"
   use 'jeetsukumaran/vim-python-indent-black'
 
-  -- Python
-  -- use  'heavenshell/vim-pydocstring'   -- Overwrites a keymap, need to fix.
-  -- use 'bfredl/nvim-ipy'
-
   -- Markdown
   use 'godlygeek/tabular'
   use 'ellisonleao/glow.nvim'
@@ -133,22 +128,29 @@ return require('packer').startup(function(use)
   -- TOML Files
   use 'cespare/vim-toml'
 
-  -- Poetry
-  -- use({'petobens/poet-v',
-  --   config = function()
-  --     local path = vim.fn.stdpath('config')..'/lua/plugins/poet-v.vim'
-  --     vim.cmd('source '..path)
-  --   end
-  -- })
-
   -- kitty config syntax-highlight
   use "fladson/vim-kitty"
 
   -- note taking with zettelkasten
 
+  -- Go
+  use "fatih/vim-go"
+
+  -- Tagbar
+  use "preservim/tagbar"
+
   -- Themes
-  use 'folke/tokyonight.nvim'
-  use 'marko-cerovac/material.nvim'
+  use "sickill/vim-monokai"
+
+  use ({
+    "f-person/git-blame.nvim",
+    requires = {'hoob3rt/lualine.nvim'},
+    config = function() require('plugins.gitblame') end
+  })
+
+  use "tpope/vim-dadbod"
+  use "kristijanhusak/vim-dadbod-ui"
+  use "kristijanhusak/vim-dadbod-completion"
 
   if packer_bootstrap then
     require('packer').sync()

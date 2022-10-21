@@ -103,10 +103,17 @@ nnoremap("fhf","<Cmd>Telescope find_files hidden=true<CR>")
 nnoremap("fb", "<Cmd>Telescope buffers<CR>")
 nnoremap("fg", "<Cmd>Telescope live_grep<CR>")
 
--- File explorer
-nnoremap("<leader>e", "<Cmd>NvimTreeToggle<CR>")  -- NvimTree
--- nnoremap("<leader>e", "<Cmd>RnvimrToggle<CR>")
-
+nnoremap("<leader>e", ":NERDTreeToggle<CR>")
 -- EasyAlign
 -- xmap("ga", "<cmd>EasyAlign")
 -- nmap("ga", "<cmd>EasyAlign")
+
+-- Fatih-go keymaps
+nnoremap("gs", ":GoImplements<CR>")
+nnoremap("gc", ":GoCallers<CR>")
+
+-- Tagbar
+nnoremap("tt", ":TagbarToggle<CR>")
+
+-- DBUI
+nnoremap("<leader>d", ":DBUIToggle<CR>")
