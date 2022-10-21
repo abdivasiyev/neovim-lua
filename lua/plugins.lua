@@ -169,6 +169,13 @@ return require('packer').startup(function(use)
     end,
   }
 
+  use {
+    'yamatsum/nvim-cursorline',
+    config = function()
+      require('plugins.cursorline')
+    end,
+  }
+
   if packer_bootstrap then
     require('packer').sync()
   end

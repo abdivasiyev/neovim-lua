@@ -85,7 +85,7 @@ nnoremap("<C-P>", ":cprev<CR>")
 nnoremap("<leader>xo", "<Cmd> !xdg-open %<CR><CR>")
 
 -- Fugitive
-nnoremap("<leader>G", ":G<CR>")
+nnoremap("<leader>g", ":G<CR>")
 nnoremap("<leader>gh", ":Gclog<CR>")
 
 -- Show line diagnostics
@@ -124,3 +124,6 @@ nnoremap("<leader>rr", ":lua require('rest-nvim').run()<cr>")
 -- NeoClip
 nnoremap("<leader><S-v>", ":Telescope neoclip a extra=star,plus,b<CR>")
 
+-- Open file in single tab
+nnoremap("<leader>z", ":tab split")
+nnoremap("<leader>x", ":q")
