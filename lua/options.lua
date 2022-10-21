@@ -12,6 +12,11 @@ vim.wo.relativenumber    = true
 vim.wo.signcolumn        = 'yes'
 vim.wo.cursorline        = true
 
+-- Fold
+vim.o.foldmethod         = 'syntax'
+vim.o.foldlevel          = 1
+vim.o.foldclose          = 'all'
+
 -- Behaviour
 vim.o.hlsearch           = false
 vim.o.ignorecase         = true                         -- Ignore case when using lowercase in search
