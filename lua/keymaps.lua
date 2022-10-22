@@ -26,7 +26,7 @@ inoremap("<C-SPACE>", "<C-x><C-o>")
 nnoremap("<C-s>", ":w<CR>")
 
 -- Close buffer
-nnoremap("<C-c>", ":q<CR>")
+nnoremap("<C-x>", ":bd<CR>")
 
 -- Move around windows (shifted to the right)
 nnoremap("<C-h>", "<C-w>h")
@@ -128,3 +128,6 @@ nnoremap("<leader><S-v>", ":Telescope neoclip a extra=star,plus,b<CR>")
 -- Open file in single tab
 nnoremap("<leader>z", ":tab split")
 nnoremap("<leader>x", ":q")
+
+-- Trouble
+nnoremap("xx", ":TroubleToggle<CR>")
