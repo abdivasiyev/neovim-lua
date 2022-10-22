@@ -8,7 +8,6 @@ vim.o.title              = true
 vim.o.termguicolors      = true                         -- Use true colors, required for some plugins
 vim.o.background         = "dark"
 vim.wo.number            = true
-vim.wo.relativenumber    = true
 vim.wo.signcolumn        = 'yes'
 vim.wo.cursorline        = true
 
