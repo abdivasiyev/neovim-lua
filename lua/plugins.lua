@@ -143,6 +143,10 @@ return require('packer').startup(function(use)
   use "sickill/vim-monokai"
   use "tomasiser/vim-code-dark"
   use "doums/darcula"
+  use ({
+      "rose-pine/neovim",
+      as = "rose-pine",
+  })
 
   use ({
     "f-person/git-blame.nvim",
