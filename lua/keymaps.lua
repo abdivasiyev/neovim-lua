@@ -131,3 +131,6 @@ nnoremap("<leader>x", ":q")
 
 -- Trouble
 nnoremap("xx", ":TroubleToggle<CR>")
+
+-- ToggleTerm
+nnoremap("<leader><S-t>", ":ToggleTerm<CR>")
