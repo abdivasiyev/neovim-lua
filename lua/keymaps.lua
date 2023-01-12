@@ -51,9 +51,6 @@ vnoremap("<leader>s", ":s//g<Left><Left>")
 vnoremap("<leader><A-s>", ":%s//g<Left><Left>")
 vnoremap("<leader>S", ":%s//gc<Left><Left><Left>")
 
--- Delete buffer
-nnoremap("<A-w>", ":bd<CR>")
-
 -- Yank to end of line
 nnoremap("Y", "y$")
 
