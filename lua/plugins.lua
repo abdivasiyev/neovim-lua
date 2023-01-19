@@ -215,8 +215,6 @@ return require('packer').startup(function(use)
       }
   end}
 
-  use 'tribela/vim-transparent'
-
   if packer_bootstrap then
     require('packer').sync()
   end
