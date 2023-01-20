@@ -101,6 +101,7 @@ nnoremap("fb", "<Cmd>Telescope buffers<CR>")
 nnoremap("fg", "<Cmd>Telescope live_grep<CR>")
 
 nnoremap("<leader>e", ":NERDTreeToggle<CR>")
+nnoremap("<leader>b", ":NERDTreeFind<CR>")
 -- EasyAlign
 -- xmap("ga", "<cmd>EasyAlign")
 -- nmap("ga", "<cmd>EasyAlign")
@@ -111,10 +112,6 @@ nnoremap("gc", ":GoCallers<CR>")
 
 -- Tagbar
 nnoremap("tt", ":TagbarToggle<CR>")
-
--- DBUI
-nnoremap("<leader>d", ":DBUIToggle<CR>")
-vnoremap("<leader>re", ":DB<CR>")
 
 -- RestNvim
 nnoremap("<leader>rr", ":lua require('rest-nvim').run()<cr>")
