@@ -147,6 +147,7 @@ return require('packer').startup(function(use)
       "rose-pine/neovim",
       as = "rose-pine",
   })
+  use "ellisonleao/gruvbox.nvim"
 
   use ({
     "f-person/git-blame.nvim",
