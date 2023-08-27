@@ -216,6 +216,8 @@ return require('packer').startup(function(use)
       }
   end}
 
+  use "rust-lang/rust.vim"
+
   if packer_bootstrap then
     require('packer').sync()
   end
